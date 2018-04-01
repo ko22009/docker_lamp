@@ -9,7 +9,6 @@ services:
         restart: always
         volumes:
           - ./web:/var/www/html
-          - ./web2:/var/www/html2
           - ./php/apache_default:/etc/apache2/sites-available/000-default.conf
     myadmin:
         image: phpmyadmin/phpmyadmin
