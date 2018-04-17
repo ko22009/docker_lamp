@@ -8,6 +8,8 @@
     </Directory>
 </VirtualHost>
 
+Listen 8080
+
 <VirtualHost *:8080>
     ServerName localhost
     DocumentRoot "/var/www/html/backend/web"
@@ -17,5 +19,3 @@
         Require all granted
     </Directory>
 </VirtualHost>
-
-Listen 8080
