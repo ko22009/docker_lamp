@@ -19,6 +19,8 @@ RUN apt-get update && \
       libcurl3 \
       php5-curl
 
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/bin --filename=composer
+
 RUN a2enmod rewrite
       
 CMD apachectl -DFOREGROUND
