@@ -24,6 +24,7 @@ RUN apt-get update && \
       php7.1-mcrypt \
       php7.1-ldap \
       php7.1-mysql \
+      zip \
       php7.1-zip \
       curl
 
