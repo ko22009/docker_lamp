@@ -8,6 +8,8 @@ RUN echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt
 
 RUN apt-get update && \
     apt-get install -y \
+      git \
+      curl \
       locales \
       apache2 \
       php7.1 \
@@ -24,9 +26,9 @@ RUN apt-get update && \
       php7.1-mcrypt \
       php7.1-ldap \
       php7.1-mysql \
+      libzip5 \
       zip \
-      php7.1-zip \
-      curl
+      php7.1-zip
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/bin --filename=composer
 
