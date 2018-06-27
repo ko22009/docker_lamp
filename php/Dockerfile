@@ -26,6 +26,7 @@ RUN apt-get update && \
       php7.1-mcrypt \
       php7.1-ldap \
       php7.1-mysql \
+      php7.1-intl \
       libzip5 \
       zip \
       php7.1-zip

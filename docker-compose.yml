@@ -4,7 +4,6 @@ services:
         build: ./php
         ports:
           - '80:80'
-          - '8080:8080'
         restart: always
         volumes:
           - ./web:/var/www/html
